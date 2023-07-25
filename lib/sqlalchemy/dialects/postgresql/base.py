@@ -3334,6 +3334,8 @@ class PGDialect(default.DefaultDialect):
     max_identifier_length = 63
     supports_sane_rowcount = True
 
+    cte_follows_insert = True
+
     supports_native_enum = True
     supports_native_boolean = True
     supports_smallserial = True
